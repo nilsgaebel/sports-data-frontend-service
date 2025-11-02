@@ -1,0 +1,61 @@
+.app-header {
+    background: #00000082;
+    /* bootstrap primary */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.app-header-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.app-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.app-sub {
+    margin: 4px 0 0;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.app-main {
+    padding: 24px 16px;
+    display: flex;
+    justify-content: center;
+    /* center the inner container */
+}
+
+/* inner container matches header width and centers its contents */
+.app-main-inner {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.center-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1vh;
+    /* fill viewport so centering is page-wide */
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 360px;
+    /* adjust to taste */
+    padding: 0 16px;
+    box-sizing: border-box;
+}
