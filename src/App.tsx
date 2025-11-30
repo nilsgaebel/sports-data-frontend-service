@@ -17,7 +17,6 @@ function App() {
       const json = await res.json()
       setData(json)
     } catch (err) {
-      console.error('search error', err)
       const message = err instanceof Error ? err.message : String(err)
       if (
         message.toLowerCase().includes('failed to fetch') ||
