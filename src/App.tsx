@@ -15,7 +15,6 @@ function App() {
       const res = await fetch(`http://127.0.0.1:5000/teams/?name=${encodeURIComponent(query)}`)
       if (!res.ok) throw new Error(res.statusText)
       const json = await res.json()
-      console.log('search result', json)
       setData(json)
     } catch (err) {
       console.error('search error', err)
